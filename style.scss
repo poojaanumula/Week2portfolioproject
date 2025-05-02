@@ -3,7 +3,6 @@
     padding:0;
    background-color: black;
     font-family: "Noto Serif", serif;;
-
 }
 @mixin button-style{
     color:white;
@@ -164,6 +163,7 @@ main{
    
    }
 }
+
 .experience{
     color:$text-color;
     font-size: 25px;
@@ -179,33 +179,42 @@ main{
 }
 .my-latest-work{
     width:70%;
-  margin: 10px auto;
+    margin: 10px auto;
     padding:30px;
+}
+.gallery{
+    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: 260px;
+        object-fit: cover;
+        height: 280px;
+      
+    }
+    a{
+        color:white;
+        text-align: center;
+        text-decoration: underline;
+        margin:10px;
+    }
+    p{
+        color:white;
+        margin-top:4px;
+        text-align: center;
+    }
+}
+.card{
+    display:flex;
+    flex-direction: column;
 }
 .my-latest-work__title{
     text-align: center;
     margin-bottom:40px;
     padding:15px;
 }
-.my-latest-work-gallery{
-  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:4px;
-    background-size: cover;
-    margin:10px auto;
-    justify-content: center;
-    text-align: center;
 
-}
-.my-latest-work__image{
-width:280px;
-background-size: cover;
-height: 280px;
-object-fit:contain;
-cursor: pointer;
-}
+
 
 .my-latest-work__title{
     color:$text-color;
